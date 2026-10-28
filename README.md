@@ -1,0 +1,130 @@
+# Skill: Văn bản Chính phủ (chuẩn Nghị định 30/2020/NĐ-CP)
+
+Skill cho AI soạn thảo **văn bản hành chính Việt Nam** đúng thể thức, đúng thẩm quyền, đúng ngôn phong
+công vụ. Nội dung được học trực tiếp từ bản signed 76 trang của **Nghị định số 30/2020/NĐ-CP ngày 05/3/2020
+của Chính phủ về công tác văn thư** (gồm 6 phụ lục: thể thức, viết hoa, chữ viết tắt và mẫu trình bày).
+
+Dùng được cho: công văn, quyết định, nghị quyết, chỉ thị, tờ trình, báo cáo, kế hoạch, thông báo, biên bản,
+giấy mời, giấy giới thiệu, công điện, văn bản quy phạm pháp luật.
+
+## Nội dung
+
+```
+van-ban-chinh-phu/
+├── SKILL.md                          # bài học cốt lõi: 3 câu hỏi, 5 nguyên tắc, 8 bước, sơ đồ 14 ô, 10 lỗi
+├── references/
+│   ├── the-thuc.md                   # 14 thành phần thể thức + kỹ thuật trình bày + bản sao + chữ ký số
+│   ├── the-loai.md                   # khuôn viết 12 nhóm thể loại, câu mở - câu kết - ví dụ
+│   ├── ngon-ngu.md                   # động từ ngôn hành, công thức câu, bảng sửa lỗi, số liệu, thời hạn
+│   ├── viet-hoa-va-viet-tat.md       # viết hoa (Phụ lục II) + 27 chữ viết tắt loại văn bản (Phụ lục III)
+│   ├── quy-trinh.md                  # thẩm quyền ký TM./Q./KT./TL./TUQ., cấp số, phát hành, lưu hồ sơ
+│   └── checklist.md                  # 50 mục kiểm tra trước khi trình ký
+├── assets/
+│   ├── mau-cong-van.md               # khung công văn
+│   ├── mau-quyet-dinh.md             # khung quyết định
+│   ├── mau-to-trinh.md               # khung tờ trình
+│   ├── mau-bao-cao.md                # khung báo cáo
+│   ├── mau-ke-hoach.md               # khung kế hoạch
+│   └── vi-du-cong-van.json           # dữ liệu mẫu cho script sinh .docx
+└── scripts/
+    └── tao_docx.py                   # sinh file .docx đúng A4, lề, Times New Roman 13-14
+```
+
+## Cài đặt
+
+### OpenCode
+
+Cách 1 - cài toàn cục (dùng cho mọi phiên):
+
+```bash
+git clone https://github.com/alexnguyenhao/skill-van-ban-chinh-phu.git /tmp/vb-skill
+mkdir -p ~/.config/opencode/skills
+cp -r /tmp/vb-skill/van-ban-chinh-phu ~/.config/opencode/skills/
+```
+
+Cách 2 - trỏ vào thư mục repo trong `opencode.json` (OpenCode tự tìm `SKILL.md` lồng bên trong):
+
+```jsonc
+{
+  "$schema": "https://opencode.ai/config.json",
+  "skills": ["/duong/dan/toi/skill-van-ban-chinh-phu"]
+}
+```
+
+Cách 3 - dùng như HTTP catalog (không cần clone):
+
+```jsonc
+{
+  "$schema": "https://opencode.ai/config.json",
+  "skills": ["https://raw.githubusercontent.com/alexnguyenhao/skill-van-ban-chinh-phu/main/"]
+}
+```
+
+Sau khi cài, gọi bằng `@van-ban-chinh-phu` hoặc nói "viết công văn theo chuẩn Chính phủ".
+
+### Claude Code
+
+```bash
+cp -r /tmp/vb-skill/van-ban-chinh-phu ~/.claude/skills/
+```
+
+### Cursor, Codex, Windsurf, Cline và các agent khác
+
+- Clone repo, trỏ agent đọc `van-ban-chinh-phu/SKILL.md` khi làm văn bản; hoặc
+- Chép nội dung `van-ban-chinh-phu/SKILL.md` vào `AGENTS.md` / `.cursor/rules` / system prompt của agent.
+
+### Dùng trong chat (ChatGPT, Claude, Gemini, Grok...)
+
+Dán toàn bộ nội dung [`chat-prompt.md`](chat-prompt.md) vào phần "Custom instructions" / system prompt / đầu cuộc
+chat, rồi yêu cầu: *"Viết công văn đề nghị Sở Văn hóa và Thể thao báo cáo kết quả công tác văn thư trước 20/6/2026"*.
+
+## Ví dụ sử dụng
+
+```
+@van-ban-chinh-phu viết Kế hoạch triển khai công tác văn thư năm 2026 của UBND tỉnh,
+căn cứ Nghị định 30/2020/NĐ-CP, phân công 4 nhiệm vụ có chủ trì - thời hạn - sản phẩm.
+```
+
+Skill sẽ: chọn thể loại và ký hiệu → dựng khối đầu (quốc hiệu, số, địa danh ngày tháng) → viết căn cứ, nội dung,
+tổ chức thực hiện → ráp nơi nhận, thẩm quyền ký → tự chạy checklist thể thức.
+
+## Sinh file Word
+
+```bash
+pip install python-docx
+python van-ban-chinh-phu/scripts/tao_docx.py \
+    van-ban-chinh-phu/assets/vi-du-cong-van.json \
+    -o "Cong-van-125.docx"
+```
+
+Script tự đặt: A4 dọc, lề trên/dưới 20 mm - trái 30 mm - phải 15 mm, Times New Roman 13-14, khối đầu 2 cột
+(quốc hiệu - tên cơ quan), số trang canh giữa ẩn trang 1, khối `Nơi nhận` - chữ ký, ô địa chỉ - điện thoại.
+Xem hướng dẫn JSON đầy đủ ở đầu file script.
+
+## Cập nhật
+
+```bash
+cd skill-van-ban-chinh-phu && git pull
+cp -r van-ban-chinh-phu/SKILL.md van-ban-chinh-phu/references van-ban-chinh-phu/assets \
+      van-ban-chinh-phu/scripts ~/.config/opencode/skills/van-ban-chinh-phu/
+```
+
+## Nguồn và giới hạn
+
+- Nội dung pháp lý tóm lược từ Nghị định 30/2020/NĐ-CP và 6 phụ lục. Nghị định này vẫn là văn bản đang áp dụng
+  cho thể thức, kỹ thuật trình bày văn bản hành chính (đã kiểm chứng năm 2026).
+- Trước khi ban hành văn bản có hiệu lực pháp lý, luôn đối chiếu lại văn bản gốc trên `vanban.chinhphu.vn`
+  và quy chế công tác văn thư của cơ quan.
+- Skill hỗ trợ soạn thảo, không thay thế trách nhiệm của người kiểm tra thể thức và người ký văn bản.
+
+## English
+
+A reusable AI skill for drafting Vietnamese government administrative documents according to
+Decree 30/2020/NĐ-CP: document types, 14 mandatory layout components, typography (A4, Times New Roman 13-14 pt),
+capitalisation rules, number/symbol formats, signing authority, drafting style, review checklist, and a
+python-docx generator. Install by copying `van-ban-chinh-phu/` into your agent's skills directory
+(`~/.config/opencode/skills`, `~/.claude/skills`, ...) or paste `chat-prompt.md` into any chat model.
+
+## Giấy phép
+
+MIT - xem [LICENSE](LICENSE).

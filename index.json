@@ -1,0 +1,24 @@
+{
+  "skills": [
+    {
+      "name": "van-ban-chinh-phu",
+      "version": "1",
+      "files": [
+        "SKILL.md",
+        "assets/mau-bao-cao.md",
+        "assets/mau-cong-van.md",
+        "assets/mau-ke-hoach.md",
+        "assets/mau-quyet-dinh.md",
+        "assets/mau-to-trinh.md",
+        "assets/vi-du-cong-van.json",
+        "references/checklist.md",
+        "references/ngon-ngu.md",
+        "references/quy-trinh.md",
+        "references/the-loai.md",
+        "references/the-thuc.md",
+        "references/viet-hoa-va-viet-tat.md",
+        "scripts/tao_docx.py"
+      ]
+    }
+  ]
+}
