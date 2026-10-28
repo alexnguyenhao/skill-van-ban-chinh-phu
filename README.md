@@ -30,6 +30,10 @@ van-ban-chinh-phu/
     └── tao_docx.py                   # sinh file .docx đúng A4, lề, Times New Roman 13-14
 ```
 
+Ngoài thư mục skill, repo còn có: `chat-prompt.md` (bản dán vào chat, 7,2 nghìn ký tự), `web/` (hướng dẫn
+ChatGPT/Claude/Gemini + bản instructions 5.000 và 1.500 ký tự), `dist/van-ban-chinh-phu.zip` (gói upload Claude),
+`build-zip.py` (dựng lại ZIP), `index.json` (catalog HTTP cho OpenCode).
+
 ## Cài đặt
 
 ### OpenCode
@@ -73,10 +77,20 @@ cp -r /tmp/vb-skill/van-ban-chinh-phu ~/.claude/skills/
 - Clone repo, trỏ agent đọc `van-ban-chinh-phu/SKILL.md` khi làm văn bản; hoặc
 - Chép nội dung `van-ban-chinh-phu/SKILL.md` vào `AGENTS.md` / `.cursor/rules` / system prompt của agent.
 
-### Dùng trong chat (ChatGPT, Claude, Gemini, Grok...)
+### Dùng trên web (ChatGPT, Claude, Gemini)
 
-Dán toàn bộ nội dung [`chat-prompt.md`](chat-prompt.md) vào phần "Custom instructions" / system prompt / đầu cuộc
-chat, rồi yêu cầu: *"Viết công văn đề nghị Sở Văn hóa và Thể thao báo cáo kết quả công tác văn thư trước 20/6/2026"*.
+- **Claude web**: upload [`dist/van-ban-chinh-phu.zip`](dist/van-ban-chinh-phu.zip) ở Settings → Customize → Skills
+  (nhớ bật Settings → Capabilities → *Code execution and file creation*).
+- **ChatGPT**: dán [`web/chatgpt-instructions-5000.txt`](web/chatgpt-instructions-5000.txt) vào Custom Instructions
+  (bản free dùng [`web/chatgpt-instructions-1500.txt`](web/chatgpt-instructions-1500.txt)); hoặc tạo Project rồi
+  upload `chat-prompt.md` + `references/`.
+- **Gemini Gems**: dán cùng file instructions, upload thêm `references/`.
+
+Hướng dẫn từng bước, kèm giới hạn ký tự và cách xử lý khi cần file `.docx`: xem [`web/README.md`](web/README.md).
+Muốn dựng lại file ZIP sau khi sửa skill: `python build-zip.py`.
+
+Nếu chỉ muốn dùng ngay trong một cuộc trò chuyện: dán toàn bộ [`chat-prompt.md`](chat-prompt.md) làm tin nhắn đầu, rồi yêu cầu:
+*"Viết công văn đề nghị Sở Văn hóa và Thể thao báo cáo kết quả công tác văn thư trước 20/6/2026"*.
 
 ## Ví dụ sử dụng
 
@@ -124,6 +138,8 @@ Decree 30/2020/NĐ-CP: document types, 14 mandatory layout components, typograph
 capitalisation rules, number/symbol formats, signing authority, drafting style, review checklist, and a
 python-docx generator. Install by copying `van-ban-chinh-phu/` into your agent's skills directory
 (`~/.config/opencode/skills`, `~/.claude/skills`, ...) or paste `chat-prompt.md` into any chat model.
+For web chat: upload `dist/van-ban-chinh-phu.zip` as a Claude skill, or paste the file in `web/` into ChatGPT
+Custom Instructions / Projects; see `web/README.md`.
 
 ## Giấy phép
 
