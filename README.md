@@ -32,7 +32,7 @@ van-ban-chinh-phu/
 
 Ngoài thư mục skill, repo còn có: `chat-prompt.md` (bản dán vào chat, 7,2 nghìn ký tự), `web/` (hướng dẫn
 ChatGPT/Claude/Gemini + bản instructions 5.000 và 1.500 ký tự), `dist/van-ban-chinh-phu.zip` (gói upload Claude),
-`build-zip.py` (dựng lại ZIP), `index.json` (catalog HTTP cho OpenCode).
+`build-zip.py` (dựng lại ZIP), `install-agy.sh` (cài cho Antigravity CLI), `index.json` (catalog HTTP cho OpenCode).
 
 ## Cài đặt
 
@@ -71,6 +71,38 @@ Sau khi cài, gọi bằng `@van-ban-chinh-phu` hoặc nói "viết công văn t
 ```bash
 cp -r /tmp/vb-skill/van-ban-chinh-phu ~/.claude/skills/
 ```
+
+### Antigravity CLI (agy)
+
+Antigravity CLI đọc đúng chuẩn `SKILL.md` như Claude/OpenCode. Cài toàn cục bằng một lệnh:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/alexnguyenhao/skill-van-ban-chinh-phu/main/install-agy.sh | bash
+```
+
+Script tải ZIP từ Releases, giải nén vào `~/.gemini/antigravity-cli/skills/van-ban-chinh-phu/` và đặt
+`name: van-ban-chinh-phu` (agy lấy trường này làm tên slash command). Cài từ bản clone trong máy:
+
+```bash
+bash install-agy.sh /duong/dan/toi/skill-van-ban-chinh-phu
+```
+
+Trong `agy`: gõ `/skills` để xem skill đã nhận, `/van-ban-chinh-phu` để gọi trực tiếp, hoặc chỉ cần nói
+"viết công văn...". Chạy một lần không vào TUI:
+
+```bash
+agy -p "Viết công văn đề nghị Sở Văn hóa và Thể thao báo cáo kết quả công tác văn thư trước 20/6/2026"
+```
+
+Muốn skill chỉ áp cho một dự án: chép thư mục vào `<workspace>/.agents/skills/` (agy ưu tiên vị trí này).
+Trên Windows, dùng PowerShell:
+
+```powershell
+Invoke-WebRequest https://github.com/alexnguyenhao/skill-van-ban-chinh-phu/releases/latest/download/van-ban-chinh-phu.zip -OutFile $env:TEMP\vb.zip
+Expand-Archive $env:TEMP\vb.zip -DestinationPath "$env:USERPROFILE\.gemini\antigravity-cli\skills" -Force
+```
+
+Cần xuất file `.docx` thì cài thêm `pip install python-docx` (script `scripts/tao_docx.py` nằm trong thư mục skill).
 
 ### Cursor, Codex, Windsurf, Cline và các agent khác
 
