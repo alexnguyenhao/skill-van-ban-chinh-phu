@@ -1,26 +1,26 @@
 {
-  "co_quan_chu_quan": "Ủy ban nhân dân tỉnh ...",
-  "co_quan": "Văn phòng Ủy ban nhân dân",
-  "so_ky_hieu": "125/UBND-VP",
-  "dia_danh": "Hà Nội",
-  "ngay": "05",
-  "thang": "3",
+  "co_quan_chu_quan": "",
+  "co_quan": "Ủy ban nhân dân xã Lộc Hưng",
+  "so_ky_hieu": "05/UBND-VP",
+  "dia_danh": "Lộc Hưng",
+  "ngay": "12",
+  "thang": "01",
   "nam": "2026",
   "cong_van": true,
   "trich_yeu": "triển khai công tác văn thư năm 2026",
   "blocks": [
-    { "t": "p", "text": "Kính gửi: Sở Văn hóa và Thể thao", "align": "left", "indent": 3.0, "space_after": 10 },
-    { "t": "p", "text": "Thực hiện Kế hoạch số 12/KH-UBND ngày 10 tháng 01 năm 2026 của Ủy ban nhân dân tỉnh về triển khai công tác văn thư năm 2026, Văn phòng Ủy ban nhân dân tỉnh đề nghị Sở Văn hóa và Thể thao triển khai một số nội dung sau:" },
+    { "t": "p", "text": "Kính gửi: Các phòng chuyên môn, Trưởng các thôn", "align": "left", "indent": 3.0, "space_after": 10 },
+    { "t": "p", "text": "Thực hiện Kế hoạch số 12/KH-UBND ngày 10 tháng 01 năm 2026 của Ủy ban nhân dân xã về triển khai công tác văn thư năm 2026, Văn phòng Ủy ban nhân dân xã đề nghị các phòng chuyên môn, Trưởng các thôn triển khai một số nội dung sau:" },
     { "t": "p", "text": "1. Rà soát, ban hành quy chế công tác văn thư của đơn vị, hoàn thành trước ngày 30 tháng 3 năm 2026." },
     { "t": "p", "text": "2. Thực hiện việc soạn thảo, ký ban hành, quản lý văn bản theo đúng quy định tại Nghị định số 30/2020/NĐ-CP ngày 05 tháng 3 năm 2020 của Chính phủ về công tác văn thư." },
-    { "t": "p", "text": "3. Báo cáo kết quả thực hiện về Văn phòng Ủy ban nhân dân tỉnh trước ngày 20 tháng 6 năm 2026 để tổng hợp, báo cáo Ủy ban nhân dân tỉnh." },
-    { "t": "p", "text": "Trong quá trình thực hiện, nếu có khó khăn, vướng mắc, đề nghị phản ánh về Văn phòng Ủy ban nhân dân tỉnh để kịp thời giải quyết./." }
+    { "t": "p", "text": "3. Báo cáo kết quả thực hiện về Văn phòng Ủy ban nhân dân xã trước ngày 20 tháng 6 năm 2026 để tổng hợp, báo cáo Ủy ban nhân dân xã." },
+    { "t": "p", "text": "Trong quá trình thực hiện, nếu có khó khăn, vướng mắc, đề nghị phản ánh về Văn phòng Ủy ban nhân dân xã để kịp thời giải quyết./." }
   ],
   "ky": {
-    "quyen_han": "KT. CHÁNH VĂN PHÒNG",
-    "chuc_vu": "PHÓ CHÁNH VĂN PHÒNG",
-    "ho_ten": "Nguyễn Văn A"
+    "quyen_han": "TM. ỦY BAN NHÂN DÂN",
+    "chuc_vu": "PHÓ CHỦ TỊCH",
+    "ho_ten": "Nguyễn Hữu Thương"
   },
-  "noi_nhan": ["Như trên", "Chủ tịch UBND tỉnh (để b/c)", "Lưu: VT, HC (2)."],
-  "dia_chi": "Số 1 Tràng Tiền, Hà Nội. ĐT: 024.xxxx.xxxx, Fax: 024.xxxx.xxxx, E-Mail: vpubnd@...; Website: ..."
+  "noi_nhan": ["Như trên", "Chủ tịch UBND xã (để b/c)", "Lưu: VT, VP (02)."],
+  "dia_chi": "Xã Lộc Hưng, tỉnh [...]. ĐT: 0xx.xxx.xxxx; Email: ubndxalochung@...; Website: ..."
 }

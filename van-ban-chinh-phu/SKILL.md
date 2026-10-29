@@ -1,6 +1,6 @@
 ---
 name: Văn bản Chính phủ
-description: Soạn thảo văn bản hành chính theo chuẩn Chính phủ Việt Nam (Nghị định 30/2020/NĐ-CP) - chọn thể loại, dựng bố cục, viết căn cứ và nội dung, chuẩn 14 thành phần thể thức, kỹ thuật trình bày A4/Times New Roman 13-14, viết hoa, số và ký hiệu, thẩm quyền ký, nơi nhận. Dùng khi cần viết công văn, tờ trình, báo cáo, kế hoạch, quyết định, thông báo, biên bản, giấy mời, công điện, hoặc kiểm tra thể thức một văn bản trước khi trình ký.
+description: Soạn thảo văn bản hành chính theo chuẩn Chính phủ Việt Nam (Nghị định 30/2020/NĐ-CP) - chọn thể loại, dựng bố cục, viết căn cứ và nội dung, chuẩn 14 thành phần thể thức, kỹ thuật trình bày A4/Times New Roman 13-14, viết hoa, số và ký hiệu, thẩm quyền ký, nơi nhận. Mặc định cho UBND xã Lộc Hưng: Chủ tịch Nguyễn Thị Xuân Linh, Phó Chủ tịch văn hóa - xã hội Nguyễn Hữu Thương, Phó Chủ tịch kinh tế Trần Thanh Quang, Trưởng phòng Văn hóa Đỗ Văn Duyên, Chánh Văn phòng Tạ Thị Ngọc Dung. Dùng khi cần viết công văn, tờ trình, báo cáo, kế hoạch, quyết định, thông báo, biên bản, giấy mời, công điện, hoặc kiểm tra thể thức một văn bản trước khi trình ký.
 ---
 
 # Văn bản Chính phủ
@@ -12,12 +12,26 @@ Nguồn gốc: học trực tiếp từ **Nghị định số 30/2020/NĐ-CP ng�
 (bản signed 76 trang) - gồm phần nội dung (Chương I-VII) và 6 phụ lục, trong đó Phụ lục I quy định thể thức,
 kỹ thuật trình bày; Phụ lục II quy định viết hoa; Phụ lục III quy định chữ viết tắt và mẫu trình bày.
 
-## 0. Trước khi viết - ba câu hỏi bắt buộc
+## 0. Cấu hình mặc định và ba câu hỏi
 
-1. **Ai ký?** (thẩm quyền) → quyết định luôn cách ghi ô 7a: `TM.`, `Q.`, `KT.`, `TL.`, `TUQ.` hay không có.
+**Đọc `assets/co-quan-mac-dinh.md` trước khi viết.** File đó ghi sẵn cơ quan, người ký, khối ký, nơi nhận mặc định:
+
+- Cơ quan: **Ủy ban nhân dân xã Lộc Hưng** (chính quyền 2 cấp, ô 2 không có cơ quan chủ quản).
+- Chủ tịch **Nguyễn Thị Xuân Linh** - việc chung, quyết định, quy chế, nhân sự, khen thưởng, kỷ luật, báo cáo năm.
+- Phó Chủ tịch **Nguyễn Hữu Thương** - lĩnh vực văn hóa - xã hội.
+- Phó Chủ tịch **Trần Thanh Quang** - lĩnh vực kinh tế.
+- Trưởng phòng Văn hóa **Đỗ Văn Duyên**, Chánh Văn phòng **Tạ Thị Ngọc Dung** - ký `TL.` khi được giao.
+
+Ba câu hỏi chỉ dùng cho phần **còn thiếu**, không hỏi lại thông tin đã có trong cấu hình:
+
+1. **Ai ký?** (thẩm quyền) → chọn theo lĩnh vực ở trên, quyết định luôn cách ghi ô 7a: `TM.`, `Q.`, `KT.`, `TL.`,
+   `TUQ.` hay không có.
 2. **Văn bản này để làm gì?** (chỉ đạo - quy định - đề nghị - báo cáo - trao đổi) → quyết định thể loại.
 3. **Có tên loại không?** → nếu có (Quyết định, Kế hoạch, Báo cáo, Tờ trình...) thì dùng ô 5a; nếu chỉ trao đổi
    công việc giữa hai cơ quan thì dùng **công văn** với ô 5b `V/v ...`.
+
+Vẫn cần hỏi: nội dung việc, căn cứ cụ thể, thời hạn, số văn bản (nếu chưa có trong sổ). Không bịa số, ngày,
+tên riêng, số liệu.
 
 Sai ở câu 1 và 3 là lỗi nặng nhất, sửa thể thức không cứu được.
 
@@ -111,6 +125,10 @@ Chi tiết từng ô (loại chữ, cỡ chữ, kiểu chữ, canh lề, gạch 
 Công thức viết từng thể loại (Nghị quyết, Quyết định, Chỉ thị, Công văn 7 kiểu, Tờ trình, Báo cáo, Kế hoạch,
 Thông báo, Biên bản, Giấy mời, Công điện): `references/the-loai.md`.
 
+Khi viết cho **UBND xã Lộc Hưng**, đổi các ví dụ cấp tỉnh ở trên cho đúng cấp xã: "Ủy ban nhân dân tỉnh" →
+"Ủy ban nhân dân xã Lộc Hưng"; "Sở Văn hóa và Thể thao" → "Trưởng phòng Văn hóa"; "các sở, ngành" →
+"các phòng chuyên môn thuộc UBND xã"; "Chủ tịch UBND tỉnh" → "Chủ tịch UBND xã".
+
 ## 6. Mười lỗi làm văn bản bị trả lại
 
 1. Sai thẩm quyền ký (`KT.` thay vì `Q.`, hoặc ký thay khi không được giao).
@@ -135,13 +153,14 @@ Thông báo, Biên bản, Giấy mời, Công điện): `references/the-loai.md`
 | `references/viet-hoa-va-viet-tat.md` | viết hoa (Phụ lục II) + 27 chữ viết tắt loại văn bản (Phụ lục III) |
 | `references/quy-trinh.md` | thẩm quyền ký, cấp số, đăng ký, phát hành, lưu hồ sơ, văn bản điện tử |
 | `references/checklist.md` | kiểm tra lần cuối trước khi trình ký (in ra dùng được) |
+| `assets/co-quan-mac-dinh.md` | **cấu hình mặc định**: UBND xã Lộc Hưng, người ký theo lĩnh vực, khối ký, nơi nhận |
 | `assets/*.md` | 5 khung văn bản mẫu: công văn, quyết định, tờ trình, báo cáo, kế hoạch |
 | `scripts/tao_docx.py` | sinh file .docx đúng lề, phông, cỡ chữ từ một file JSON mô tả văn bản |
 
 ## 8. Cách dùng nhanh
 
-- Người dùng đưa nội dung thô → hỏi 3 câu ở mục 0 (nếu chưa rõ) → chọn thể loại → viết theo `the-loai.md`
-  → ráp thể thức theo `the-thuc.md` → chạy `checklist.md` → xuất bản.
+- Người dùng đưa nội dung thô → đọc `assets/co-quan-mac-dinh.md` → hỏi 3 câu ở mục 0 (chỉ phần còn thiếu)
+  → chọn thể loại → viết theo `the-loai.md` → ráp thể thức theo `the-thuc.md` → chạy `checklist.md` → xuất bản.
 - Cần file Word: sao `assets/vi-du-cong-van.json` rồi sửa nội dung, chạy
   `python scripts/tao_docx.py van-ban.json -o "Cong-van-123.docx"` (cần `pip install python-docx`).
   Script tự đặt A4, lề 20/20/30/15 mm, Times New Roman 13-14, khối đầu 2 cột, số trang canh giữa

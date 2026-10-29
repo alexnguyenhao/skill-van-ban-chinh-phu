@@ -7,6 +7,12 @@ của Chính phủ về công tác văn thư** (gồm 6 phụ lục: thể thứ
 Dùng được cho: công văn, quyết định, nghị quyết, chỉ thị, tờ trình, báo cáo, kế hoạch, thông báo, biên bản,
 giấy mời, giấy giới thiệu, công điện, văn bản quy phạm pháp luật.
 
+**Mặc định của bản này:** cơ quan **Ủy ban nhân dân xã Lộc Hưng**; Chủ tịch **Nguyễn Thị Xuân Linh**;
+Phó Chủ tịch **Nguyễn Hữu Thương** (văn hóa - xã hội); Phó Chủ tịch **Trần Thanh Quang** (kinh tế);
+Trưởng phòng Văn hóa **Đỗ Văn Duyên**; Chánh Văn phòng **Tạ Thị Ngọc Dung**. Toàn bộ cấu hình nằm trong
+[`van-ban-chinh-phu/assets/co-quan-mac-dinh.md`](van-ban-chinh-phu/assets/co-quan-mac-dinh.md) - đổi cơ quan
+chỉ cần sửa file đó.
+
 ## Nội dung
 
 ```
@@ -20,6 +26,7 @@ van-ban-chinh-phu/
 │   ├── quy-trinh.md                  # thẩm quyền ký TM./Q./KT./TL./TUQ., cấp số, phát hành, lưu hồ sơ
 │   └── checklist.md                  # 50 mục kiểm tra trước khi trình ký
 ├── assets/
+│   ├── co-quan-mac-dinh.md           # cấu hình: UBND xã Lộc Hưng, người ký theo lĩnh vực, khối ký, nơi nhận
 │   ├── mau-cong-van.md               # khung công văn
 │   ├── mau-quyet-dinh.md             # khung quyết định
 │   ├── mau-to-trinh.md               # khung tờ trình
@@ -30,7 +37,7 @@ van-ban-chinh-phu/
     └── tao_docx.py                   # sinh file .docx đúng A4, lề, Times New Roman 13-14
 ```
 
-Ngoài thư mục skill, repo còn có: `chat-prompt.md` (bản dán vào chat, 7,2 nghìn ký tự), `web/` (hướng dẫn
+Ngoài thư mục skill, repo còn có: `chat-prompt.md` (bản dán vào chat, 7,8 nghìn ký tự), `web/` (hướng dẫn
 ChatGPT/Claude/Gemini + bản instructions 5.000 và 1.500 ký tự), `dist/van-ban-chinh-phu.zip` (gói upload Claude),
 `build-zip.py` (dựng lại ZIP), `install-agy.sh` (cài cho Antigravity CLI), `index.json` (catalog HTTP cho OpenCode).
 
@@ -113,7 +120,8 @@ Cần xuất file `.docx` thì cài thêm `pip install python-docx` (script `scr
 
 - **Claude web**: upload [`dist/van-ban-chinh-phu.zip`](dist/van-ban-chinh-phu.zip) ở Settings → Customize → Skills
   (nhớ bật Settings → Capabilities → *Code execution and file creation*).
-- **ChatGPT**: dán [`web/chatgpt-instructions-5000.txt`](web/chatgpt-instructions-5000.txt) vào Custom Instructions
+- **ChatGPT**: dán [`web/chatgpt-about-you.txt`](web/chatgpt-about-you.txt) vào ô 1 và
+  [`web/chatgpt-instructions-5000.txt`](web/chatgpt-instructions-5000.txt) vào ô 2 của Custom Instructions
   (bản free dùng [`web/chatgpt-instructions-1500.txt`](web/chatgpt-instructions-1500.txt)); hoặc tạo Project rồi
   upload `chat-prompt.md` + `references/`.
 - **Gemini Gems**: dán cùng file instructions, upload thêm `references/`.
@@ -127,7 +135,7 @@ Nếu chỉ muốn dùng ngay trong một cuộc trò chuyện: dán toàn bộ 
 ## Ví dụ sử dụng
 
 ```
-@van-ban-chinh-phu viết Kế hoạch triển khai công tác văn thư năm 2026 của UBND tỉnh,
+@van-ban-chinh-phu viết Kế hoạch triển khai công tác văn thư năm 2026 của UBND xã,
 căn cứ Nghị định 30/2020/NĐ-CP, phân công 4 nhiệm vụ có chủ trì - thời hạn - sản phẩm.
 ```
 

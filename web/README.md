@@ -9,8 +9,8 @@ kèm đúng file cần dùng cho từng nơi.
 |---|---|---|
 | **Claude web** (claude.ai) | Upload skill dạng ZIP | [`../dist/van-ban-chinh-phu.zip`](../dist/van-ban-chinh-phu.zip) |
 | **Claude Projects** | Instructions + knowledge files | `chat-prompt.md` + `van-ban-chinh-phu/references/` |
-| **ChatGPT Plus/Pro** - Custom Instructions | Dán vào ô "Cách ChatGPT phản hồi?" | [`chatgpt-instructions-5000.txt`](chatgpt-instructions-5000.txt) |
-| **ChatGPT free** - Custom Instructions | Dán bản rút gọn (giới hạn 1.500 ký tự) | [`chatgpt-instructions-1500.txt`](chatgpt-instructions-1500.txt) |
+| **ChatGPT Plus/Pro** - Custom Instructions | Dán vào 2 ô: giới thiệu (ô 1) + quy tắc (ô 2) | [`chatgpt-about-you.txt`](chatgpt-about-you.txt) + [`chatgpt-instructions-5000.txt`](chatgpt-instructions-5000.txt) |
+| **ChatGPT free** - Custom Instructions | Dán bản rút gọn (giới hạn 1.500 ký tự/ô) | [`chatgpt-about-you.txt`](chatgpt-about-you.txt) + [`chatgpt-instructions-1500.txt`](chatgpt-instructions-1500.txt) |
 | **ChatGPT Projects** | Instructions + upload file | `chat-prompt.md` + references |
 | **ChatGPT Custom GPT** | Configure + Knowledge | `chat-prompt.md` + references |
 | **Gemini Gems** | Instructions + file | `chatgpt-instructions-5000.txt` hoặc `chat-prompt.md` |
@@ -58,7 +58,7 @@ Claude không chạy được script Python nếu chưa bật code execution, n�
 ## 2. Claude Projects (bản free cũng có)
 
 1. **Projects** → **New project** → đặt tên "Văn bản hành chính".
-2. **Set project instructions** → dán toàn bộ [`../chat-prompt.md`](../chat-prompt.md).
+2. **Set project instructions** → dán toàn bộ [`../chat-prompt.md`](../chat-prompt.md) (7,8 nghìn ký tự, dưới giới hạn 8.000).
 3. **Add content / Files** → upload các file trong `van-ban-chinh-phu/references/`
    (`the-thuc.md`, `the-loai.md`, `ngon-ngu.md`, `viet-hoa-va-viet-tat.md`, `quy-trinh.md`, `checklist.md`)
    và 5 file trong `van-ban-chinh-phu/assets/`.
@@ -66,20 +66,24 @@ Claude không chạy được script Python nếu chưa bật code execution, n�
 
 ## 3. ChatGPT - Custom Instructions (nhanh nhất)
 
+Bản trong repo đã cấu hình sẵn cho **UBND xã Lộc Hưng** (Chủ tịch Nguyễn Thị Xuân Linh; Phó Chủ tịch
+Nguyễn Hữu Thương - văn hóa - xã hội; Phó Chủ tịch Trần Thanh Quang - kinh tế; Trưởng phòng Văn hóa
+Đỗ Văn Duyên; Chánh Văn phòng Tạ Thị Ngọc Dung).
+
 1. **Settings** → **Personalization** → **Custom instructions**.
-2. Ô thứ nhất (về bản thân): có thể để trống hoặc ghi "Tôi là công chức văn phòng UBND cấp tỉnh".
-3. Ô thứ hai (Cách ChatGPT phản hồi): dán **toàn bộ** nội dung file:
-   - gói Plus/Pro/Team/Enterprise: [`chatgpt-instructions-5000.txt`](chatgpt-instructions-5000.txt) (4.964 ký tự)
-   - gói free: [`chatgpt-instructions-1500.txt`](chatgpt-instructions-1500.txt) (1.479 ký tự)
+2. Ô thứ nhất ("What should ChatGPT know about you?"): dán [`chatgpt-about-you.txt`](chatgpt-about-you.txt).
+3. Ô thứ hai ("How should ChatGPT respond?"):
+   - gói Plus/Pro/Team/Enterprise: dán [`chatgpt-instructions-5000.txt`](chatgpt-instructions-5000.txt) (4.937 ký tự)
+   - gói free: dán [`chatgpt-instructions-1500.txt`](chatgpt-instructions-1500.txt) (1.479 ký tự)
 4. **Save** → mở chat mới. Custom Instructions áp cho mọi cuộc trò chuyện.
 
-Bản 5.000 ký tự đã đủ 8 nhóm quy tắc: hỏi trước khi viết, chọn thể loại, 14 thành phần thể thức, bố cục,
-câu mẫu, viết hoa, 10 lỗi cần tránh, định dạng câu trả lời.
+Bản 5.000 ký tự đủ 8 nhóm quy tắc: cấu hình mặc định, hỏi trước khi viết, chọn thể loại, 14 thành phần thể thức,
+bố cục, câu mẫu, viết hoa, 10 lỗi cần tránh, định dạng câu trả lời.
 
 ## 4. ChatGPT Projects (giữ được cả bộ tài liệu)
 
 1. **ChatGPT** → **Projects** → **New project**.
-2. **Project instructions** → dán [`../chat-prompt.md`](../chat-prompt.md) (7,2 nghìn ký tự, nằm trong giới hạn).
+2. **Project instructions** → dán [`../chat-prompt.md`](../chat-prompt.md) (7,8 nghìn ký tự, dưới giới hạn 8.000).
 3. **Add files** → upload `references/*.md` + `assets/*.md` (tối đa ~25 file).
 4. Chat trong project. Nếu cần file Word: bật **Code interpreter/Canvas** rồi yêu cầu xuất `.docx`.
 
