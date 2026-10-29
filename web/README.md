@@ -1,29 +1,32 @@
-# Dùng skill trên web (ChatGPT, Claude, Gemini)
+# Dùng skill trên web: ChatGPT, Claude, Gemini và các nền tảng khác
 
-Repo này không chỉ dành cho OpenCode/Claude Code. Dưới đây là cách đưa cùng một bộ quy tắc vào các chat web,
-kèm đúng file cần dùng cho từng nơi.
+Repo này không chỉ dành cho OpenCode/Claude Code. Dưới đây là cách đưa cùng một bộ quy tắc soạn văn bản hành
+chính vào các chat web, kèm đúng file cần dùng cho từng nơi, cách kiểm tra sau khi cài và xử lý sự cố.
 
 ## Chọn nhanh
 
 | Nơi dùng | Cách làm | File |
 |---|---|---|
 | **Claude web** (claude.ai) | Upload skill dạng ZIP | [`../dist/van-ban-chinh-phu.zip`](../dist/van-ban-chinh-phu.zip) |
-| **Claude Projects** | Instructions + knowledge files | `chat-prompt.md` + `van-ban-chinh-phu/references/` |
-| **ChatGPT Plus/Pro** - Custom Instructions | Dán vào 2 ô: giới thiệu (ô 1) + quy tắc (ô 2) | [`chatgpt-about-you.txt`](chatgpt-about-you.txt) + [`chatgpt-instructions-5000.txt`](chatgpt-instructions-5000.txt) |
-| **ChatGPT free** - Custom Instructions | Dán bản rút gọn (giới hạn 1.500 ký tự/ô) | [`chatgpt-about-you.txt`](chatgpt-about-you.txt) + [`chatgpt-instructions-1500.txt`](chatgpt-instructions-1500.txt) |
-| **ChatGPT Projects** | Instructions + upload file | `chat-prompt.md` + references |
-| **ChatGPT Custom GPT** | Configure + Knowledge | `chat-prompt.md` + references |
-| **Gemini Gems** | Instructions + file | `chatgpt-instructions-5000.txt` hoặc `chat-prompt.md` |
-| **Bất kỳ chat nào** | Dán đầu cuộc trò chuyện | [`../chat-prompt.md`](../chat-prompt.md) |
+| **Claude Projects** | Instructions + knowledge files | [`../chat-prompt.md`](../chat-prompt.md) + `references/` |
+| **ChatGPT Plus/Pro/Team** - Custom Instructions | Dán vào 2 ô: giới thiệu + quy tắc | [`chatgpt-about-you.txt`](chatgpt-about-you.txt) + [`chatgpt-instructions-5000.txt`](chatgpt-instructions-5000.txt) |
+| **ChatGPT free** - Custom Instructions | Bản rút gọn (1.500 ký tự/ô) | [`chatgpt-about-you.txt`](chatgpt-about-you.txt) + [`chatgpt-instructions-1500.txt`](chatgpt-instructions-1500.txt) |
+| **ChatGPT Projects** | Instructions + upload file | [`../chat-prompt.md`](../chat-prompt.md) + `references/` |
+| **ChatGPT Custom GPT** | Configure + Knowledge | [`../chat-prompt.md`](../chat-prompt.md) + `references/` |
+| **Gemini Gems** | Instructions + file | [`chatgpt-instructions-5000.txt`](chatgpt-instructions-5000.txt) |
+| **Copilot, Grok, DeepSeek, Qwen...** | Dán đầu cuộc trò chuyện | [`../chat-prompt.md`](../chat-prompt.md) |
+| **OpenCode, Claude Code, Antigravity CLI** | Chép thư mục skill vào máy | `../van-ban-chinh-phu/` |
 
-Giới hạn đã kiểm tra (2026): Custom Instructions của ChatGPT là **5.000 ký tự** với gói trả phí, **1.500** với gói free;
-Projects nhận instructions dài hơn và tối đa ~25 file.
+Giới hạn thực tế (kiểm tra lại khi nền tảng đổi): Custom Instructions của ChatGPT là **5.000 ký tự** với gói
+trả phí, **1.500** với gói free; ChatGPT Projects nhận instructions tới **8.000 ký tự**; Project/Gem của Claude
+và Gemini nhận instructions dài hơn nhưng nên dùng bản ngắn rồi bổ sung bằng file.
 
 ## Link tải nhanh (mở là thấy nội dung, không cần clone)
 
 - ZIP cho Claude: <https://github.com/alexnguyenhao/skill-van-ban-chinh-phu/releases/latest/download/van-ban-chinh-phu.zip>
 - Instructions 5.000 ký tự: <https://raw.githubusercontent.com/alexnguyenhao/skill-van-ban-chinh-phu/main/web/chatgpt-instructions-5000.txt>
 - Instructions 1.500 ký tự: <https://raw.githubusercontent.com/alexnguyenhao/skill-van-ban-chinh-phu/main/web/chatgpt-instructions-1500.txt>
+- Giới thiệu bản thân: <https://raw.githubusercontent.com/alexnguyenhao/skill-van-ban-chinh-phu/main/web/chatgpt-about-you.txt>
 - Bản đầy đủ dán vào chat: <https://raw.githubusercontent.com/alexnguyenhao/skill-van-ban-chinh-phu/main/chat-prompt.md>
 
 ---
@@ -34,11 +37,11 @@ Claude đọc được cả bộ skill, tự gọi khi thấy việc soạn văn
 
 1. Mở **claude.ai** → đăng nhập.
 2. **Settings** (bánh răng góc dưới trái) → **Capabilities** → bật **Code execution and file creation**.
-   Không bật mục này thì phần Skills không dùng được (skill cần đọc file và chạy script).
+   Không bật mục này thì phần Skills không dùng được (skill cần đọc file và chạy script sinh `.docx`).
 3. Vào **Customize** → **Skills** → **Upload skill**.
-4. Chọn file `dist/van-ban-chinh-phu.zip` trong repo này (hoặc tải từ
+4. Chọn file `dist/van-ban-chinh-phu.zip` (hoặc tải từ
    [Releases](https://github.com/alexnguyenhao/skill-van-ban-chinh-phu/releases)).
-5. Claude hiện thông tin skill; gạt công tắc sang **On**.
+5. Claude hiện thông tin skill: `van-ban-chinh-phu` - Văn bản Chính phủ. Gạt công tắc sang **On**.
 6. Mở chat mới, gõ việc cần làm - Claude tự nạp skill:
 
    > Viết công văn đề nghị Sở Văn hóa và Thể thao báo cáo kết quả công tác văn thư trước ngày 20/6/2026,
@@ -58,7 +61,8 @@ Claude không chạy được script Python nếu chưa bật code execution, n�
 ## 2. Claude Projects (bản free cũng có)
 
 1. **Projects** → **New project** → đặt tên "Văn bản hành chính".
-2. **Set project instructions** → dán toàn bộ [`../chat-prompt.md`](../chat-prompt.md) (7,8 nghìn ký tự, dưới giới hạn 8.000).
+2. **Set project instructions** → dán toàn bộ [`../chat-prompt.md`](../chat-prompt.md)
+   (7.828 ký tự, dưới giới hạn 8.000).
 3. **Add content / Files** → upload các file trong `van-ban-chinh-phu/references/`
    (`the-thuc.md`, `the-loai.md`, `ngon-ngu.md`, `viet-hoa-va-viet-tat.md`, `quy-trinh.md`, `checklist.md`)
    và 5 file trong `van-ban-chinh-phu/assets/`.
@@ -72,19 +76,21 @@ Nguyễn Hữu Thương - văn hóa - xã hội; Phó Chủ tịch Trần Thanh 
 `TM. ỦY BAN NHÂN DÂN` (Chủ tịch, Phó Chủ tịch) và `TL. CHỦ TỊCH` (Chánh Văn phòng, Trưởng phòng).
 
 1. **Settings** → **Personalization** → **Custom instructions**.
-2. Ô thứ nhất ("What should ChatGPT know about you?"): dán [`chatgpt-about-you.txt`](chatgpt-about-you.txt).
+2. Ô thứ nhất ("What should ChatGPT know about you?"): dán [`chatgpt-about-you.txt`](chatgpt-about-you.txt)
+   (1.366 ký tự).
 3. Ô thứ hai ("How should ChatGPT respond?"):
-   - gói Plus/Pro/Team/Enterprise: dán [`chatgpt-instructions-5000.txt`](chatgpt-instructions-5000.txt) (4.937 ký tự)
+   - gói Plus/Pro/Team/Enterprise: dán [`chatgpt-instructions-5000.txt`](chatgpt-instructions-5000.txt)
+     (4.936 ký tự)
    - gói free: dán [`chatgpt-instructions-1500.txt`](chatgpt-instructions-1500.txt) (1.479 ký tự)
 4. **Save** → mở chat mới. Custom Instructions áp cho mọi cuộc trò chuyện.
 
-Bản 5.000 ký tự đủ 8 nhóm quy tắc: cấu hình mặc định, hỏi trước khi viết, chọn thể loại, 14 thành phần thể thức,
-bố cục, câu mẫu, viết hoa, 10 lỗi cần tránh, định dạng câu trả lời.
+Bản 5.000 ký tự đủ 9 nhóm quy tắc: cấu hình mặc định, hỏi trước khi viết, chọn thể loại, 14 thành phần thể
+thức, bố cục, câu mẫu, viết hoa, 10 lỗi cần tránh, định dạng câu trả lời.
 
 ## 4. ChatGPT Projects (giữ được cả bộ tài liệu)
 
 1. **ChatGPT** → **Projects** → **New project**.
-2. **Project instructions** → dán [`../chat-prompt.md`](../chat-prompt.md) (7,8 nghìn ký tự, dưới giới hạn 8.000).
+2. **Project instructions** → dán [`../chat-prompt.md`](../chat-prompt.md) (7.828 ký tự, dưới giới hạn 8.000).
 3. **Add files** → upload `references/*.md` + `assets/*.md` (tối đa ~25 file).
 4. Chat trong project. Nếu cần file Word: bật **Code interpreter/Canvas** rồi yêu cầu xuất `.docx`.
 
@@ -94,24 +100,64 @@ bố cục, câu mẫu, viết hoa, 10 lỗi cần tránh, định dạng câu t
 2. **Instructions**: dán [`../chat-prompt.md`](../chat-prompt.md).
 3. **Knowledge**: upload `references/*.md` và `assets/*.md`.
 4. **Capabilities**: bật **Code Interpreter & Data Analysis** để sinh được `.docx`.
-5. **Create** → chọn "Only me" hoặc "Anyone with a link".
+5. **Create** → chọn "Only me", "Anyone with a link" hoặc "GPT Store".
+
+Lưu ý: Custom GPT chia sẻ cho người khác thì họ thấy cả file knowledge - không đưa vào đó thông tin nội bộ
+chưa công khai.
 
 ## 6. Gemini Gems
 
 1. **Gemini** → **Gems** → **New Gem**.
-2. Dán [`chatgpt-instructions-5000.txt`](chatgpt-instructions-5000.txt) (hoặc `chat-prompt.md` nếu ô cho phép dài).
-3. **Add files** → upload `references/*.md` để Gem tra cứu chi tiết.
+2. Ô instructions: dán [`chatgpt-instructions-5000.txt`](chatgpt-instructions-5000.txt) (vừa giới hạn Gem).
+3. **Add files** → upload `references/the-thuc.md`, `references/the-loai.md`, `references/quy-trinh.md`,
+   `references/checklist.md`, `assets/co-quan-mac-dinh.md`.
 4. **Save**.
+5. Nếu Gem cắt bớt nội dung, dán [`chatgpt-instructions-1500.txt`](chatgpt-instructions-1500.txt) vào ô
+   instructions và để các file `references/` gánh phần chi tiết.
 
-## 7. Không có công cụ nào ở trên - dán trực tiếp
+## 7. Copilot, Grok, DeepSeek, Qwen và chat khác
 
-Mở chat bất kỳ (Grok, Copilot, DeepSeek, Qwen...), dán [`../chat-prompt.md`](../chat-prompt.md) làm tin nhắn đầu,
-sau đó nêu yêu cầu. Cách này tốn token mỗi cuộc nhưng dùng được ở mọi nơi, kể cả app điện thoại.
+Không có chỗ lưu instructions? Dán [`../chat-prompt.md`](../chat-prompt.md) làm tin nhắn đầu tiên, sau đó nêu
+yêu cầu. Cách này tốn token mỗi cuộc nhưng dùng được ở mọi nơi, kể cả app điện thoại.
+
+Mẹo giữ ngữ cảnh: dán prompt một lần rồi tiếp tục trong cùng cuộc trò chuyện; đừng mở cuộc mới cho từng văn bản.
+
+## 8. Cài trong máy (OpenCode, Claude Code, Antigravity CLI)
+
+```bash
+git clone https://github.com/alexnguyenhao/skill-van-ban-chinh-phu.git /tmp/vb-skill
+cp -r /tmp/vb-skill/van-ban-chinh-phu ~/.config/opencode/skills/   # OpenCode
+cp -r /tmp/vb-skill/van-ban-chinh-phu ~/.claude/skills/            # Claude Code
+bash /tmp/vb-skill/install-agy.sh /tmp/vb-skill                    # Antigravity CLI
+```
+
+Bản cài trong máy đọc được toàn bộ `references/`, chạy được `scripts/tao_docx.py` và tự nạp theo mô tả
+trong `SKILL.md`.
+
+## Giới hạn ký tự và cách xử lý
+
+| Nơi nhận | Giới hạn | File dùng | Ghi chú |
+|---|---|---|---|
+| ChatGPT Custom Instructions (trả phí) | 5.000 ký tự/ô | `chatgpt-instructions-5000.txt` (4.936) | tính cả xuống dòng |
+| ChatGPT Custom Instructions (free) | 1.500 ký tự/ô | `chatgpt-instructions-1500.txt` (1.479) | |
+| ChatGPT Projects | 8.000 ký tự | `chat-prompt.md` (7.828) | thêm file không tính vào đây |
+| ChatGPT Custom GPT | 8.000 ký tự | `chat-prompt.md` | Knowledge tối đa ~20 file |
+| Claude Project instructions | dài hơn ChatGPT | `chat-prompt.md` | thêm file không tính vào đây |
+| Gemini Gem instructions | ô ngắn | `chatgpt-instructions-1500.txt` | thêm file cho phần chi tiết |
+| Claude Skill (ZIP) | không giới hạn thực tế | `dist/van-ban-chinh-phu.zip` | đọc cả thư mục |
+
+Nếu bị báo vượt ký tự: kiểm tra đã dán đúng bản chưa (5.000 so với 1.500), và nhớ rằng một số trình duyệt
+đếm thêm ký tự xuống dòng - các file trong repo đã chừa dung sai cho việc này.
 
 ## Câu lệnh mẫu
 
 ```
-Viết Quyết định ban hành Quy chế công tác văn thư của UBND tỉnh, người ký là Chủ tịch UBND tỉnh.
+Viết Quyết định ban hành Quy chế công tác văn thư của UBND xã Lộc Hưng, người ký là Chủ tịch UBND xã.
+```
+
+```
+Viết công văn đề nghị các phòng chuyên môn báo cáo kết quả công tác văn thư trước ngày 20/6/2026,
+căn cứ Nghị định 30/2020/NĐ-CP, Chánh Văn phòng ký thừa lệnh Chủ tịch.
 ```
 
 ```
@@ -122,12 +168,37 @@ Kiểm tra thể thức công văn sau và sửa lỗi: [dán văn bản]
 Chuyển tờ trình này thành file .docx đúng lề 30/20/20/15 mm, Times New Roman 13, giãn dòng 1,5.
 ```
 
+## Kiểm tra sau khi cài
+
+Dán câu này để kiểm tra model đã nhận đúng quy tắc. Câu trả lời đúng phải có: quốc hiệu + tiêu ngữ,
+`Số: 05/UBND-VP` **có** dấu hai chấm, `TM. ỦY BAN NHÂN DÂN`, kết thúc bằng `./.`, nơi nhận có `Lưu: VT`.
+
+```
+Thử viết giúp tôi dòng số, ký hiệu và khối ký của một công văn tháng 2 năm 2026 do Chánh Văn phòng
+UBND xã ký thừa lệnh Chủ tịch, kèm 3 dòng nơi nhận.
+```
+
+Nếu model trả về `Số 05/UBND-VP` (không có dấu hai chấm), `T/M ỦY BAN NHÂN DÂN` hoặc thiếu `./.` thì chưa
+nhận đúng instructions - kiểm tra lại bước dán/upload.
+
+## Xử lý sự cố
+
+| Hiện tượng | Nguyên nhân | Cách sửa |
+|---|---|---|
+| Model vẫn dùng `T/M`, `Số` không có dấu hai chấm | Chưa nạp instructions hoặc nạp bản cũ | Dán lại file trong `web/`, mở chat mới |
+| Không thấy mục Skills ở Claude | Chưa bật Code execution | Settings → Capabilities → bật |
+| Upload ZIP báo lỗi | ZIP nén tay, có thư mục cha | Chạy `python build-zip.py` rồi upload lại |
+| Bị cắt khi dán 5.000 ký tự | Đang dùng gói free | Dùng bản 1.500 ký tự |
+| Không xuất được `.docx` | Chưa bật code interpreter/code execution | Bật trong cài đặt, hoặc yêu cầu dán nội dung để tự tạo file |
+| Trả lời thiếu chi tiết thể thức | Chỉ dán instructions, chưa upload references | Upload thêm `references/` vào Project/Gem |
+
 ## Khác biệt so với bản cài trong máy
 
-| | Bản cài (OpenCode / Claude Code) | Bản web |
+| | Bản cài (OpenCode / Claude Code / agy) | Bản web |
 |---|---|---|
-| Nạp skill | Tự động theo mô tả | Upload ZIP (Claude) hoặc dán instructions |
-| Chạy `tao_docx.py` | Có, tạo file thật | Chỉ khi bật code execution / code interpreter |
+| Nạp skill | Tự động theo mô tả trong `SKILL.md` | Upload ZIP (Claude) hoặc dán instructions |
+| Chạy `tao_docx.py` | Có, tạo file thật đúng lề | Chỉ khi bật code execution / code interpreter |
 | Đọc toàn bộ references | Có | Có (Claude ZIP) hoặc chỉ phần đã upload |
+| Cập nhật | `git pull` rồi chép lại thư mục | Dán lại file hoặc upload ZIP mới |
 
-Nếu chỉ cần một việc gấp mà không muốn cấu hình: dán `chat-prompt.md` là đủ 90% chất lượng.
+Nếu chỉ cần một việc gấp mà không muốn cấu hình: dán `chat-prompt.md` là đủ khoảng 90% chất lượng.
