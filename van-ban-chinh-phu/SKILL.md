@@ -22,8 +22,8 @@ kỹ thuật trình bày; Phụ lục II quy định viết hoa; Phụ lục III
 - Phó Chủ tịch **Trần Thanh Quang** - lĩnh vực kinh tế.
 - Trưởng phòng Văn hóa **Đỗ Văn Duyên**, Trưởng phòng Kinh tế **Tạ Hoàng Dũng**, Chánh Văn phòng
   **Tạ Thị Ngọc Dung** - văn bản chuyên môn, giấy mời, đôn đốc, việc thường ngày.
-- **Khối ký chỉ ghi chức danh**: `CHỦ TỊCH`, `PHÓ CHỦ TỊCH`, `CHÁNH VĂN PHÒNG`, `TRƯỞNG PHÒNG VĂN HÓA`,
-  `TRƯỞNG PHÒNG KINH TẾ` - không ghi `TM.`, `TL.`, `KT.`, không ghi tên cơ quan trên chức danh.
+- **Khối ký**: `TM. ỦY BAN NHÂN DÂN` + `CHỦ TỊCH`/`PHÓ CHỦ TỊCH` (Chủ tịch, Phó Chủ tịch); `TL. CHỦ TỊCH` +
+  `CHÁNH VĂN PHÒNG`/`TRƯỞNG PHÒNG VĂN HÓA`/`TRƯỞNG PHÒNG KINH TẾ` (Chánh Văn phòng, Trưởng phòng).
 - **Nơi nhận**: nếu văn bản có `Kính gửi:` thì dòng đầu là `Như trên;`, sau đó `CT, các P.CT UBND xã;`,
   cuối là `Lưu: VT.`
 
@@ -103,7 +103,7 @@ Bảng đầy đủ 27 loại + 3 loại bản sao: `references/viet-hoa-va-viet
 │  [10a][10b]                                                  │
 │                    NỘI DUNG VĂN BẢN                          │  ô 6
 │                                                              │
-│ Nơi nhận:                    CHỨC VỤ NGƯỜI KÝ            │  ô 9b | 7a
+│ Nơi nhận:                QUYỀN HẠN, CHỨC VỤ NGƯỜI KÝ     │  ô 9b | 7a
 │ - Như trên;                  (chữ ký, dấu)                   │  8, 7c
 │ - CT, các P.CT UBND xã;               Họ và tên              │  7b
 │ - Lưu: VT.                                                   │

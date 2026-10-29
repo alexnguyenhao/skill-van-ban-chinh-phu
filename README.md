@@ -10,7 +10,8 @@ giấy mời, giấy giới thiệu, công điện, văn bản quy phạm pháp 
 **Mặc định của bản này:** cơ quan **Ủy ban nhân dân xã Lộc Hưng**; Chủ tịch **Nguyễn Thị Xuân Linh**;
 Phó Chủ tịch **Nguyễn Hữu Thương** (văn hóa - xã hội); Phó Chủ tịch **Trần Thanh Quang** (kinh tế);
 Trưởng phòng Văn hóa **Đỗ Văn Duyên**; Trưởng phòng Kinh tế **Tạ Hoàng Dũng**; Chánh Văn phòng
-**Tạ Thị Ngọc Dung**. Khối ký chỉ ghi chức danh, không ghi `TM.`/`TL.`. Toàn bộ cấu hình nằm trong
+**Tạ Thị Ngọc Dung**. Khối ký dùng `TM. ỦY BAN NHÂN DÂN` (Chủ tịch, Phó Chủ tịch) và `TL. CHỦ TỊCH`
+(Chánh Văn phòng, Trưởng phòng). Toàn bộ cấu hình nằm trong
 [`van-ban-chinh-phu/assets/co-quan-mac-dinh.md`](van-ban-chinh-phu/assets/co-quan-mac-dinh.md) - đổi cơ quan
 chỉ cần sửa file đó.
 

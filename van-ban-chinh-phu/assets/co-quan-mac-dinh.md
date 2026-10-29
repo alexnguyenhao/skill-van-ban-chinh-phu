@@ -21,55 +21,63 @@
 
 ## 2. Người ký mặc định
 
-| Lĩnh vực / loại việc | Người ký | Chức danh trong khối ký |
+| Lĩnh vực / loại việc | Người ký | Khối ký (ô 7a + 7b) |
 | --- | --- | --- |
-| Việc chung, quyết định, quy chế, nhân sự, khen thưởng, kỷ luật, báo cáo năm, chương trình công tác | Nguyễn Thị Xuân Linh - Chủ tịch | `CHỦ TỊCH` |
-| Văn hóa, thể thao, du lịch, giáo dục, y tế, lao động - thương binh và xã hội, dân tộc, tôn giáo, thông tin và truyền thông | Nguyễn Hữu Thương - Phó Chủ tịch | `PHÓ CHỦ TỊCH` |
-| Nông nghiệp, công thương, xây dựng, giao thông, tài chính - kế hoạch, đất đai, môi trường, thuế, hợp tác xã | Trần Thanh Quang - Phó Chủ tịch | `PHÓ CHỦ TỊCH` |
-| Văn bản chuyên môn văn hóa do Phòng Văn hóa chủ trì | Đỗ Văn Duyên - Trưởng phòng Văn hóa | `TRƯỞNG PHÒNG VĂN HÓA` |
-| Văn bản chuyên môn kinh tế do Phòng Kinh tế chủ trì | Tạ Hoàng Dũng - Trưởng phòng Kinh tế | `TRƯỞNG PHÒNG KINH TẾ` |
-| Giấy mời, công văn đôn đốc, thông báo nội bộ, bản sao, văn bản hành chính thường ngày | Tạ Thị Ngọc Dung - Chánh Văn phòng | `CHÁNH VĂN PHÒNG` |
+| Việc chung, quyết định, quy chế, nhân sự, khen thưởng, kỷ luật, báo cáo năm, chương trình công tác | Nguyễn Thị Xuân Linh - Chủ tịch | `TM. ỦY BAN NHÂN DÂN` + `CHỦ TỊCH` |
+| Văn hóa, thể thao, du lịch, giáo dục, y tế, lao động - thương binh và xã hội, dân tộc, tôn giáo, thông tin và truyền thông | Nguyễn Hữu Thương - Phó Chủ tịch | `TM. ỦY BAN NHÂN DÂN` + `PHÓ CHỦ TỊCH` |
+| Nông nghiệp, công thương, xây dựng, giao thông, tài chính - kế hoạch, đất đai, môi trường, thuế, hợp tác xã | Trần Thanh Quang - Phó Chủ tịch | `TM. ỦY BAN NHÂN DÂN` + `PHÓ CHỦ TỊCH` |
+| Văn bản chuyên môn văn hóa do Phòng Văn hóa chủ trì | Đỗ Văn Duyên - Trưởng phòng Văn hóa | `TL. CHỦ TỊCH` + `TRƯỞNG PHÒNG VĂN HÓA` |
+| Văn bản chuyên môn kinh tế do Phòng Kinh tế chủ trì | Tạ Hoàng Dũng - Trưởng phòng Kinh tế | `TL. CHỦ TỊCH` + `TRƯỞNG PHÒNG KINH TẾ` |
+| Giấy mời, công văn đôn đốc, thông báo nội bộ, bản sao, văn bản hành chính thường ngày | Tạ Thị Ngọc Dung - Chánh Văn phòng | `TL. CHỦ TỊCH` + `CHÁNH VĂN PHÒNG` |
 
 Ô 7b: chức vụ in hoa đậm 13-14, họ tên in thường đậm ngay dưới, canh giữa; không ghi học hàm, quân hàm.
 
 ## 3. Quy ước khối ký của đơn vị
 
-Khối ký **chỉ ghi chức danh**, không ghi `TM.`, `TL.`, `KT.`, `Q.`, `TUQ.`, không ghi tên cơ quan phía trên
-chức danh (đây là quy ước riêng của đơn vị, khác mẫu 7a trong Nghị định 30).
+Khối ký gồm **quyền hạn ký (ô 7a) + chức danh (ô 7b) + họ tên**:
+
+- Chủ tịch, Phó Chủ tịch: `TM. ỦY BAN NHÂN DÂN` (ký thay mặt tập thể UBND) + `CHỦ TỊCH` / `PHÓ CHỦ TỊCH`.
+- Chánh Văn phòng, Trưởng phòng: `TL. CHỦ TỊCH` (thừa lệnh Chủ tịch) + `CHÁNH VĂN PHÒNG` /
+  `TRƯỞNG PHÒNG VĂN HÓA` / `TRƯỞNG PHÒNG KINH TẾ`.
+- Không dùng `KT.`, `Q.`, `TUQ.` cho các trường hợp thường ngày; chỉ dùng khi có văn bản giao quyền cụ thể.
 
 ```
-        CHỦ TỊCH
+     TM. ỦY BAN NHÂN DÂN
+           CHỦ TỊCH
 
-   Nguyễn Thị Xuân Linh
-```
-
-```
-      PHÓ CHỦ TỊCH
-
-  Nguyễn Hữu Thương
-```
-
-```
-     CHÁNH VĂN PHÒNG
-
-   Tạ Thị Ngọc Dung
+     Nguyễn Thị Xuân Linh
 ```
 
 ```
-   TRƯỞNG PHÒNG VĂN HÓA
+     TM. ỦY BAN NHÂN DÂN
+         PHÓ CHỦ TỊCH
 
-     Đỗ Văn Duyên
+     Nguyễn Hữu Thương
 ```
 
 ```
-   TRƯỞNG PHÒNG KINH TẾ
+        TL. CHỦ TỊCH
+       CHÁNH VĂN PHÒNG
 
-     Tạ Hoàng Dũng
+      Tạ Thị Ngọc Dung
 ```
 
-- Chức danh: in hoa, đậm, canh giữa, cách dòng ký khoảng 2-3 dòng trống.
-- Họ tên: in thường, đậm, canh giữa, dưới chức danh.
-- Khi **kiểm tra văn bản của cơ quan khác**, vẫn dùng quy tắc Nghị định 30 (`TM.`, `KT.`, `TL.`...).
+```
+        TL. CHỦ TỊCH
+     TRƯỞNG PHÒNG VĂN HÓA
+
+        Đỗ Văn Duyên
+```
+
+```
+        TL. CHỦ TỊCH
+     TRƯỞNG PHÒNG KINH TẾ
+
+        Tạ Hoàng Dũng
+```
+
+- Ô 7a: in hoa, đậm, canh giữa, cỡ 13-14; ô 7b: chức danh in hoa đậm, họ tên in thường đậm ngay dưới.
+- Khoảng trống giữa chức danh và họ tên: 2-3 dòng để ký.
 
 ## 4. Thứ tự chọn người ký và câu hỏi bắt buộc
 

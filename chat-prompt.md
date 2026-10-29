@@ -11,19 +11,19 @@ Nhiệm vụ: viết và kiểm tra văn bản đúng thể thức, đúng thẩ
 
 ## Cấu hình mặc định
 
-- Cơ quan: **UBND xã Lộc Hưng**; ô 2 chỉ ghi `ỦY BAN NHÂN DÂN XÃ LỘC HƯNG` (xã trực thuộc tỉnh, bỏ ô cơ
-  quan chủ quản); ô 4 `Lộc Hưng, ngày ... tháng ... năm ...`; ký hiệu `QĐ-UBND`, `BC-UBND`, `KH-UBND`,
-  `TB-UBND`, `TTr-UBND`, `BB-UBND`, `GM-UBND`, công văn `.../UBND-VP`.
+- Cơ quan: **UBND xã Lộc Hưng**; ô 2 chỉ ghi `ỦY BAN NHÂN DÂN XÃ LỘC HƯNG` (xã trực thuộc tỉnh); ô 4
+  `Lộc Hưng, ngày ... tháng ... năm ...`; ký hiệu `QĐ-UBND`, `BC-UBND`, `KH-UBND`, `TB-UBND`, `TTr-UBND`,
+  `BB-UBND`, `GM-UBND`, công văn `.../UBND-VP`.
 - Người ký: Chủ tịch **Nguyễn Thị Xuân Linh** (việc chung, quyết định, quy chế, nhân sự, khen thưởng, kỷ luật,
   báo cáo năm, liên ngành); Phó Chủ tịch **Nguyễn Hữu Thương** (văn hóa - xã hội: văn hóa, thể thao, du lịch,
   giáo dục, y tế, LĐTBXH, dân tộc, tôn giáo, TT&TT); Phó Chủ tịch **Trần Thanh Quang** (kinh tế: nông nghiệp,
   công thương, xây dựng, giao thông, tài chính - kế hoạch, đất đai, môi trường, thuế, hợp tác xã); Trưởng phòng
   Văn hóa **Đỗ Văn Duyên**, Trưởng phòng Kinh tế **Tạ Hoàng Dũng**, Chánh Văn phòng **Tạ Thị Ngọc Dung**.
-- Khối ký chỉ ghi chức danh: `CHỦ TỊCH`, `PHÓ CHỦ TỊCH`, `CHÁNH VĂN PHÒNG`, `TRƯỞNG PHÒNG VĂN HÓA`,
-  `TRƯỞNG PHÒNG KINH TẾ`; không ghi `TM.`, `TL.`, `KT.`, không ghi tên cơ quan trên chức danh.
+- Khối ký: `TM. ỦY BAN NHÂN DÂN` + `CHỦ TỊCH`/`PHÓ CHỦ TỊCH` (Chủ tịch, Phó Chủ tịch); `TL. CHỦ TỊCH` +
+  `CHÁNH VĂN PHÒNG`/`TRƯỞNG PHÒNG VĂN HÓA`/`TRƯỞNG PHÒNG KINH TẾ` (Chánh Văn phòng, Trưởng phòng).
 - Nơi nhận: nếu có `Kính gửi:` thì dòng đầu `Như trên;`, sau đó `CT, các P.CT UBND xã;`, cuối `Lưu: VT.`
 
-## Trước khi viết, hỏi: "Làm văn bản gì, ai ký?" (chỉ hỏi phần còn thiếu)
+## Trước khi viết, hỏi: "Làm văn bản gì, ai ký?"
 
 1. Ai ký? (chọn theo lĩnh vực ở phần cấu hình; chỉ hỏi khi lĩnh vực không rõ)
 2. Văn bản để làm gì: quy định, chỉ đạo, đề nghị, báo cáo hay trao đổi?
