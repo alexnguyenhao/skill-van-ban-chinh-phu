@@ -1,6 +1,6 @@
 ---
 name: Văn bản Chính phủ
-description: Soạn thảo văn bản hành chính theo chuẩn Chính phủ Việt Nam (Nghị định 30/2020/NĐ-CP) - chọn thể loại, dựng bố cục, viết căn cứ và nội dung, chuẩn 14 thành phần thể thức, kỹ thuật trình bày A4/Times New Roman 13-14, viết hoa, số và ký hiệu, thẩm quyền ký, nơi nhận. Mặc định cho UBND xã Lộc Hưng: Chủ tịch Nguyễn Thị Xuân Linh, Phó Chủ tịch văn hóa - xã hội Nguyễn Hữu Thương, Phó Chủ tịch kinh tế Trần Thanh Quang, Trưởng phòng Văn hóa Đỗ Văn Duyên, Chánh Văn phòng Tạ Thị Ngọc Dung. Dùng khi cần viết công văn, tờ trình, báo cáo, kế hoạch, quyết định, thông báo, biên bản, giấy mời, công điện, hoặc kiểm tra thể thức một văn bản trước khi trình ký.
+description: Soạn thảo văn bản hành chính theo chuẩn Chính phủ Việt Nam (Nghị định 30/2020/NĐ-CP) - chọn thể loại, dựng bố cục, viết căn cứ và nội dung, chuẩn 14 thành phần thể thức, kỹ thuật trình bày A4/Times New Roman 13-14, viết hoa, số và ký hiệu, thẩm quyền ký, nơi nhận. Mặc định cho UBND xã Lộc Hưng: Chủ tịch Nguyễn Thị Xuân Linh, Phó Chủ tịch văn hóa - xã hội Nguyễn Hữu Thương, Phó Chủ tịch kinh tế Trần Thanh Quang, Trưởng phòng Văn hóa Đỗ Văn Duyên, Trưởng phòng Kinh tế Tạ Hoàng Dũng, Chánh Văn phòng Tạ Thị Ngọc Dung. Dùng khi cần viết công văn, tờ trình, báo cáo, kế hoạch, quyết định, thông báo, biên bản, giấy mời, công điện, hoặc kiểm tra thể thức một văn bản trước khi trình ký.
 ---
 
 # Văn bản Chính phủ
@@ -12,7 +12,7 @@ Nguồn gốc: học trực tiếp từ **Nghị định số 30/2020/NĐ-CP ng�
 (bản signed 76 trang) - gồm phần nội dung (Chương I-VII) và 6 phụ lục, trong đó Phụ lục I quy định thể thức,
 kỹ thuật trình bày; Phụ lục II quy định viết hoa; Phụ lục III quy định chữ viết tắt và mẫu trình bày.
 
-## 0. Cấu hình mặc định và ba câu hỏi
+## 0. Cấu hình mặc định và câu hỏi bắt buộc
 
 **Đọc `assets/co-quan-mac-dinh.md` trước khi viết.** File đó ghi sẵn cơ quan, người ký, khối ký, nơi nhận mặc định:
 
@@ -20,12 +20,20 @@ kỹ thuật trình bày; Phụ lục II quy định viết hoa; Phụ lục III
 - Chủ tịch **Nguyễn Thị Xuân Linh** - việc chung, quyết định, quy chế, nhân sự, khen thưởng, kỷ luật, báo cáo năm.
 - Phó Chủ tịch **Nguyễn Hữu Thương** - lĩnh vực văn hóa - xã hội.
 - Phó Chủ tịch **Trần Thanh Quang** - lĩnh vực kinh tế.
-- Trưởng phòng Văn hóa **Đỗ Văn Duyên**, Chánh Văn phòng **Tạ Thị Ngọc Dung** - ký `TL.` khi được giao.
+- Trưởng phòng Văn hóa **Đỗ Văn Duyên**, Trưởng phòng Kinh tế **Tạ Hoàng Dũng**, Chánh Văn phòng
+  **Tạ Thị Ngọc Dung** - văn bản chuyên môn, giấy mời, đôn đốc, việc thường ngày.
+- **Khối ký chỉ ghi chức danh**: `CHỦ TỊCH`, `PHÓ CHỦ TỊCH`, `CHÁNH VĂN PHÒNG`, `TRƯỞNG PHÒNG VĂN HÓA`,
+  `TRƯỞNG PHÒNG KINH TẾ` - không ghi `TM.`, `TL.`, `KT.`, không ghi tên cơ quan trên chức danh.
+- **Nơi nhận**: nếu văn bản có `Kính gửi:` thì dòng đầu là `Như trên;`, sau đó `CT, các P.CT UBND xã;`,
+  cuối là `Lưu: VT.`
 
-Ba câu hỏi chỉ dùng cho phần **còn thiếu**, không hỏi lại thông tin đã có trong cấu hình:
+**Trước khi viết, luôn hỏi một câu:** *"Anh/chị muốn làm văn bản gì và ai ký?"* (gợi ý: Chủ tịch, Phó Chủ tịch
+văn hóa - xã hội, Phó Chủ tịch kinh tế, Chánh Văn phòng, Trưởng phòng Văn hóa, Trưởng phòng Kinh tế).
+Nếu người dùng đã nêu đủ việc và người ký thì vào việc luôn, không hỏi lại.
 
-1. **Ai ký?** (thẩm quyền) → chọn theo lĩnh vực ở trên, quyết định luôn cách ghi ô 7a: `TM.`, `Q.`, `KT.`, `TL.`,
-   `TUQ.` hay không có.
+Sau đó chỉ hỏi phần còn thiếu:
+
+1. **Ai ký?** → dùng đúng người người dùng chọn; nếu "tùy" thì chọn theo lĩnh vực ở trên.
 2. **Văn bản này để làm gì?** (chỉ đạo - quy định - đề nghị - báo cáo - trao đổi) → quyết định thể loại.
 3. **Có tên loại không?** → nếu có (Quyết định, Kế hoạch, Báo cáo, Tờ trình...) thì dùng ô 5a; nếu chỉ trao đổi
    công việc giữa hai cơ quan thì dùng **công văn** với ô 5b `V/v ...`.
@@ -95,9 +103,10 @@ Bảng đầy đủ 27 loại + 3 loại bản sao: `references/viet-hoa-va-viet
 │  [10a][10b]                                                  │
 │                    NỘI DUNG VĂN BẢN                          │  ô 6
 │                                                              │
-│ Nơi nhận:                    QUYỀN HẠN, CHỨC VỤ NGƯỜI KÝ     │  ô 9b | 7a
+│ Nơi nhận:                    CHỨC VỤ NGƯỜI KÝ            │  ô 9b | 7a
 │ - Như trên;                  (chữ ký, dấu)                   │  8, 7c
-│ - Lưu: VT, HC (2).                    Họ và tên              │  7b
+│ - CT, các P.CT UBND xã;               Họ và tên              │  7b
+│ - Lưu: VT.                                                   │
 │ Địa chỉ, ĐT, Email...                                        │  ô 13 (lề dưới 20-25mm)
 └─────────────────────────────────────────────────────────────┘
 ```

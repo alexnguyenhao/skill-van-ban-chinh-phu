@@ -298,8 +298,10 @@ def build(data, out, co_chu=13, le_tren=20, le_duoi=20, le_trai=30, le_phai=15):
     else:
         cell_para(left_cell, "", size=11, first=True)
 
-    cell_para(right_cell, ky.get("quyen_han", ""), size=co_chu + 1, bold=True, first=True)
-    cell_para(right_cell, ky.get("chuc_vu", ""), size=co_chu + 1, bold=True)
+    if ky.get("quyen_han"):
+        cell_para(right_cell, ky["quyen_han"], size=co_chu + 1, bold=True, first=True)
+    if ky.get("chuc_vu"):
+        cell_para(right_cell, ky["chuc_vu"], size=co_chu + 1, bold=True, first=not ky.get("quyen_han"))
     for _ in range(3):
         cell_para(right_cell, "", size=co_chu)
     cell_para(right_cell, ky.get("ho_ten", ""), size=co_chu + 1, bold=True)

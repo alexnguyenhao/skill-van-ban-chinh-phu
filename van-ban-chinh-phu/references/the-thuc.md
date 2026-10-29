@@ -112,6 +112,10 @@ Lưu ý thứ tự điểm: sau `đ` là `e`, `g`, `h`, `i`, `k`, `l`, `m`, `n`,
 - 7c Chữ ký: ký giấy bằng **bút mực xanh**, không dùng mực đỏ, không dùng bút chì; chữ ký số đặt canh giữa
   chức vụ và họ tên, ảnh `.png` nền trong suốt, màu xanh.
 - Chức vụ ghi trên văn bản là chức vụ lãnh đạo chính thức; không ghi chức vụ Nhà nước không quy định.
+- **Quy ước của UBND xã Lộc Hưng:** ô 7a chỉ ghi chức danh (`CHỦ TỊCH`, `PHÓ CHỦ TỊCH`, `CHÁNH VĂN PHÒNG`,
+  `TRƯỞNG PHÒNG VĂN HÓA`, `TRƯỞNG PHÒNG KINH TẾ`), không ghi `TM.`/`TL.`/`KT.` - xem
+  `assets/co-quan-mac-dinh.md`. Quy tắc `TM.`, `Q.`, `KT.`, `TL.`, `TUQ.` ở trên vẫn dùng khi kiểm tra văn bản
+  của cơ quan khác.
 
 ### Ô 8 - Dấu, chữ ký số của cơ quan, tổ chức
 - Dấu: đóng trùm lên khoảng 1/3 hình ảnh chữ ký số của người có thẩm quyền về bên trái; dấu đỏ, kích thước thực tế.

@@ -21,90 +21,89 @@
 
 ## 2. Người ký mặc định
 
-| Lĩnh vực / loại việc | Người ký | Ô 7a | Ô 7b |
-| --- | --- | --- | --- |
-| Việc chung, quyết định, quy chế, nhân sự, khen thưởng, kỷ luật, báo cáo năm, chương trình công tác | Nguyễn Thị Xuân Linh - Chủ tịch | `TM. ỦY BAN NHÂN DÂN` | `CHỦ TỊCH` |
-| Văn hóa, thể thao, du lịch, giáo dục, y tế, lao động - thương binh và xã hội, dân tộc, tôn giáo, thông tin và truyền thông | Nguyễn Hữu Thương - Phó Chủ tịch | `TM. ỦY BAN NHÂN DÂN` | `PHÓ CHỦ TỊCH` |
-| Nông nghiệp, công thương, xây dựng, giao thông, tài chính - kế hoạch, đất đai, môi trường, thuế, hợp tác xã | Trần Thanh Quang - Phó Chủ tịch | `TM. ỦY BAN NHÂN DÂN` | `PHÓ CHỦ TỊCH` |
-| Văn bản chuyên môn văn hóa do Phòng Văn hóa chủ trì, khi được giao ký | Đỗ Văn Duyên - Trưởng phòng Văn hóa | `TL. CHỦ TỊCH` | `TRƯỞNG PHÒNG VĂN HÓA` |
-| Giấy mời, công văn đôn đốc, thông báo nội bộ, bản sao, văn bản hành chính thường ngày khi được giao | Tạ Thị Ngọc Dung - Chánh Văn phòng | `TL. CHỦ TỊCH` | `CHÁNH VĂN PHÒNG` |
+| Lĩnh vực / loại việc | Người ký | Chức danh trong khối ký |
+| --- | --- | --- |
+| Việc chung, quyết định, quy chế, nhân sự, khen thưởng, kỷ luật, báo cáo năm, chương trình công tác | Nguyễn Thị Xuân Linh - Chủ tịch | `CHỦ TỊCH` |
+| Văn hóa, thể thao, du lịch, giáo dục, y tế, lao động - thương binh và xã hội, dân tộc, tôn giáo, thông tin và truyền thông | Nguyễn Hữu Thương - Phó Chủ tịch | `PHÓ CHỦ TỊCH` |
+| Nông nghiệp, công thương, xây dựng, giao thông, tài chính - kế hoạch, đất đai, môi trường, thuế, hợp tác xã | Trần Thanh Quang - Phó Chủ tịch | `PHÓ CHỦ TỊCH` |
+| Văn bản chuyên môn văn hóa do Phòng Văn hóa chủ trì | Đỗ Văn Duyên - Trưởng phòng Văn hóa | `TRƯỞNG PHÒNG VĂN HÓA` |
+| Văn bản chuyên môn kinh tế do Phòng Kinh tế chủ trì | Tạ Hoàng Dũng - Trưởng phòng Kinh tế | `TRƯỞNG PHÒNG KINH TẾ` |
+| Giấy mời, công văn đôn đốc, thông báo nội bộ, bản sao, văn bản hành chính thường ngày | Tạ Thị Ngọc Dung - Chánh Văn phòng | `CHÁNH VĂN PHÒNG` |
 
 Ô 7b: chức vụ in hoa đậm 13-14, họ tên in thường đậm ngay dưới, canh giữa; không ghi học hàm, quân hàm.
 
-## 3. Thứ tự chọn người ký
+## 3. Quy ước khối ký của đơn vị
 
-1. Người dùng nêu tên hoặc chức danh → dùng đúng ý người dùng, không tự "sửa" lại.
-2. Có từ khóa văn hóa - xã hội (văn hóa, thể thao, du lịch, giáo dục, y tế, LĐTBXH, dân tộc, tôn giáo, TT&TT)
-   → Phó Chủ tịch **Nguyễn Hữu Thương**.
-3. Có từ khóa kinh tế (nông nghiệp, công thương, xây dựng, giao thông, tài chính, đất đai, môi trường, thuế,
-   hợp tác xã, chợ, giảm nghèo phần kinh tế) → Phó Chủ tịch **Trần Thanh Quang**.
-4. Quyết định, quy chế, nhân sự, khen thưởng, kỷ luật, báo cáo năm, chương trình công tác, việc liên ngành
-   hoặc văn bản quan trọng → Chủ tịch **Nguyễn Thị Xuân Linh**.
-5. Giấy mời, đôn đốc, sao y, thông báo nội bộ, văn bản hành chính thường ngày → Chánh Văn phòng
-   **Tạ Thị Ngọc Dung** (`TL. CHỦ TỊCH`).
-6. Văn bản chuyên môn văn hóa do Phòng Văn hóa chủ trì → Trưởng phòng **Đỗ Văn Duyên** (`TL. CHỦ TỊCH`).
-7. Không xác định được lĩnh vực → hỏi đúng một câu: *"Văn bản này thuộc lĩnh vực văn hóa - xã hội, kinh tế hay
-   do Chủ tịch ký?"* rồi mới viết.
-
-Không thêm lãnh đạo ngoài danh sách, không đổi chức danh, không ghi "kiêm nhiệm", không suy ra người ký từ
-chức vụ của cơ quan khác.
-
-## 4. Khối ký - bản mẫu
-
-Chủ tịch:
+Khối ký **chỉ ghi chức danh**, không ghi `TM.`, `TL.`, `KT.`, `Q.`, `TUQ.`, không ghi tên cơ quan phía trên
+chức danh (đây là quy ước riêng của đơn vị, khác mẫu 7a trong Nghị định 30).
 
 ```
-TM. ỦY BAN NHÂN DÂN
-       CHỦ TỊCH
+        CHỦ TỊCH
 
-  Nguyễn Thị Xuân Linh
+   Nguyễn Thị Xuân Linh
 ```
 
-Phó Chủ tịch (văn hóa - xã hội):
-
 ```
-TM. ỦY BAN NHÂN DÂN
-     PHÓ CHỦ TỊCH
+      PHÓ CHỦ TỊCH
 
   Nguyễn Hữu Thương
 ```
 
-Phó Chủ tịch (kinh tế): giống trên, thay tên **Trần Thanh Quang**.
-
-Thừa lệnh:
-
 ```
-TL. CHỦ TỊCH
-CHÁNH VĂN PHÒNG
+     CHÁNH VĂN PHÒNG
 
- Tạ Thị Ngọc Dung
+   Tạ Thị Ngọc Dung
 ```
 
 ```
-TL. CHỦ TỊCH
-TRƯỞNG PHÒNG VĂN HÓA
+   TRƯỞNG PHÒNG VĂN HÓA
 
-   Đỗ Văn Duyên
+     Đỗ Văn Duyên
 ```
 
-- `TM.` chỉ dùng khi ký thay mặt tập thể UBND (Chủ tịch, Phó Chủ tịch được phân công).
-- `TL.` dùng khi Chủ tịch giao ký thay (Chánh Văn phòng, Trưởng phòng).
-- Không dùng `KT.` cho Phó Chủ tịch ký văn bản thuộc lĩnh vực được phân công; `KT.` chỉ dùng khi ký thay
-  người đứng đầu trong trường hợp được giao cụ thể và ghi rõ chức vụ thay.
+```
+   TRƯỞNG PHÒNG KINH TẾ
+
+     Tạ Hoàng Dũng
+```
+
+- Chức danh: in hoa, đậm, canh giữa, cách dòng ký khoảng 2-3 dòng trống.
+- Họ tên: in thường, đậm, canh giữa, dưới chức danh.
+- Khi **kiểm tra văn bản của cơ quan khác**, vẫn dùng quy tắc Nghị định 30 (`TM.`, `KT.`, `TL.`...).
+
+## 4. Thứ tự chọn người ký và câu hỏi bắt buộc
+
+**Trước khi viết, luôn hỏi:** *"Anh/chị muốn làm văn bản gì và ai ký?"* - kèm gợi ý nhanh: Chủ tịch, Phó Chủ tịch
+(văn hóa - xã hội / kinh tế), Chánh Văn phòng, Trưởng phòng Văn hóa, Trưởng phòng Kinh tế. Chỉ hỏi một lần;
+nếu người dùng đã nêu đủ việc và người ký thì vào việc luôn.
+
+Sau khi có câu trả lời:
+
+1. Người dùng nêu tên hoặc chức danh → dùng đúng ý người dùng, không tự "sửa" lại.
+2. Người dùng nói "tùy" hoặc chưa rõ → chọn theo lĩnh vực: văn hóa - xã hội → Phó Chủ tịch **Nguyễn Hữu Thương**;
+   kinh tế → Phó Chủ tịch **Trần Thanh Quang**.
+3. Quyết định, quy chế, nhân sự, khen thưởng, kỷ luật, báo cáo năm, việc liên ngành → Chủ tịch **Nguyễn Thị Xuân Linh**.
+4. Văn bản chuyên môn do phòng chủ trì → Trưởng phòng **Đỗ Văn Duyên** (văn hóa) hoặc **Tạ Hoàng Dũng** (kinh tế).
+5. Giấy mời, đôn đốc, sao y, thông báo nội bộ, việc thường ngày → Chánh Văn phòng **Tạ Thị Ngọc Dung**.
+
+Không thêm lãnh đạo ngoài danh sách, không đổi chức danh, không ghi "kiêm nhiệm".
 
 ## 5. Nơi nhận mặc định
 
-Văn bản chỉ đạo, triển khai trong xã:
+- Văn bản **có `Kính gửi:`** ở đầu → dòng đầu của nơi nhận ghi `Như trên;`.
+- Văn bản **không có `Kính gửi:`** (quyết định, kế hoạch, báo cáo...) → bỏ dòng `Như trên`, ghi đối tượng nhận thật.
+
+Mẫu mặc định:
 
 ```
 Nơi nhận:
-- TT. HĐND xã;
-- Chủ tịch, các Phó Chủ tịch UBND xã;
-- Các phòng chuyên môn thuộc UBND xã;
-- Lưu: VT, VP (02).
+- Như trên;
+- CT, các P.CT UBND xã;
+- Lưu: VT.
 ```
 
-Văn bản gửi cấp trên: dòng đầu `Kính gửi: Ủy ban nhân dân tỉnh [tên tỉnh]`, cuối vẫn có `Lưu: VT, VP (02).`
+Có thể thêm đối tượng cụ thể khi cần (các phòng chuyên môn, Trưởng các thôn, đơn vị phối hợp) ngay trước dòng
+`Lưu: VT.`.
 
 ## 6. Câu mặc định
 

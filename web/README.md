@@ -68,7 +68,8 @@ Claude không chạy được script Python nếu chưa bật code execution, n�
 
 Bản trong repo đã cấu hình sẵn cho **UBND xã Lộc Hưng** (Chủ tịch Nguyễn Thị Xuân Linh; Phó Chủ tịch
 Nguyễn Hữu Thương - văn hóa - xã hội; Phó Chủ tịch Trần Thanh Quang - kinh tế; Trưởng phòng Văn hóa
-Đỗ Văn Duyên; Chánh Văn phòng Tạ Thị Ngọc Dung).
+Đỗ Văn Duyên; Trưởng phòng Kinh tế Tạ Hoàng Dũng; Chánh Văn phòng Tạ Thị Ngọc Dung). Khối ký chỉ ghi chức danh,
+không ghi `TM.`/`TL.`.
 
 1. **Settings** → **Personalization** → **Custom instructions**.
 2. Ô thứ nhất ("What should ChatGPT know about you?"): dán [`chatgpt-about-you.txt`](chatgpt-about-you.txt).
